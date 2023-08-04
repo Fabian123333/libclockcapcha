@@ -3,6 +3,7 @@
 #include <cstring>
 #include <cmath>
 #include <iostream>
+#include <unistd.h>
 
 class LibCClock{
 	typedef struct RelativePositionStruct{
