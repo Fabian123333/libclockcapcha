@@ -12,6 +12,9 @@ int main(){
   LibCClock cclock = LibCClock();
   LibCClock::Format c = cclock.Generate();
 
+  cclock.width = 600;
+  cclock.height = 600;
+
   printf("capcha solution %s\n", c.solution);
   printf("svg content %s\n", c.content);
 
