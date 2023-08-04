@@ -10,10 +10,11 @@ This library creates a random time (5 minute step) and a randomly obfuscated cap
 
 int main(){
   LibCClock cclock = LibCClock();
-  LibCClock::Format c = cclock.Generate();
 
   cclock.width = 600;
   cclock.height = 600;
+
+  LibCClock::Format c = cclock.Generate();
 
   printf("capcha solution %s\n", c.solution);
   printf("svg content %s\n", c.content);
